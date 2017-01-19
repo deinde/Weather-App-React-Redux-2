@@ -9,9 +9,6 @@ export default (props)=>{
       googleMapElement= {
        <GoogleMap  defaultZoom={12} defaultCenter={{lat:props.lat, lng:props.lon}} /> 
       } 
-     
-      
      />
-  	);
-
-}
+  	):
+  }
