@@ -22,6 +22,8 @@ class SearchBar extends Component{
 	//while form is on focus
 	onFormSubmit(event){
 		event.preventDefault();
+		//event.target.value is being passed in fetch. this was set in onInputChange function
+		//as this.setState({term:event.target.value})
 		this.props.fetchWeather(this.state.term);
 		this.setState({term:''})
 	}
